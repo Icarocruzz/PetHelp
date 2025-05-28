@@ -1,0 +1,31 @@
+<nav>
+    <section class="contact">
+        <h1 class="call"> <i class="fa-solid fa-phone"></i> Ligue agora e agente uma consulta</h1>
+        <h1 class="email">
+            <i class="fa-solid fa-envelope"></i> <strong> E-MAIL:</strong> recepcao#pethelper.vet.br
+        </h1>
+    </section>
+    <div class="line"></div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-3 col-3">
+                <div class="logo">
+                    <img src="/logo-white.svg" alt="logo pet help">
+                </div>
+            </div>
+            <div class="col-md-9 col-sm-9 col-9 text-end">
+                <div class="menu-icon" (click)="openMenu()">
+                    <i class="{{menu_icon}}"></i>
+                </div>
+                <div class="desktop_menu" [class.mobile_menu]="menuValue">
+                    <ul>
+                        <li (click)="scrollTo('main')">Home</li>
+                        <li (click)="scrollTo('about')">About</li>
+                        <li (click)="scrollTo('contact')">Contact</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
