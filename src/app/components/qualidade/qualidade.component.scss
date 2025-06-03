@@ -1,0 +1,76 @@
+@import "variables";
+@import "buttons";
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 50px;
+  list-style: none;
+}
+
+.main-content {
+  width: 60%;
+  margin: 4rem;
+}
+
+.title h1 {
+  color: $primary;
+  font-size: $font-size-title;
+}
+
+.text p {
+  color:$text;
+  font-size: $font-size-subtitle;
+}
+
+.list li {
+  font-size: $font-size-subtitle;
+  color: $text;
+}
+
+.list i{
+  color: $primary;
+}
+
+.btn-container {
+  padding-top: 2rem;
+}
+
+.btn {
+  @include default-button;
+}
+
+.image-container {
+  width: 40%;
+}
+
+.image-container img {
+  width: 550px;
+}
+
+@media screen and (min-width: $mobile) and (max-width: $desktop) {
+  main {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .main-content {
+    width: 100%;
+    margin: 0;
+  }
+
+  .image-container {
+    width: 100%;
+    padding: 3rem;
+
+    img {
+      width: 400px;
+    }
+  }
+
+
+
+}
+
