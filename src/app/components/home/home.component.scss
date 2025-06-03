@@ -19,11 +19,11 @@
   z-index: 1;
   text-align: center;
   animation: fadeInUp 1.5s ease-out forwards;
-}
 
-.title h3 {
-  font-size: $font-size-big;
-  color: $white;
+  h3 {
+    font-size: $font-size-big;
+    color: $white;
+  }
 }
 
 .image-container img {
@@ -42,4 +42,10 @@
   @include default-button;
 }
 
-
+@media screen and (min-width: $mobile) and (max-width: $desktop) {
+  .title {
+    h3 {
+      font-size: 3rem;
+    }
+  }
+}
