@@ -4,15 +4,18 @@
 main {
   display: flex;
   flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
 }
 
 .main-content {
   text-align: center;
   padding: 20px;
+  width: 100%;
 }
 
 .title {
-
   h1 {
     color: $primary;
     font-size: $font-size-subtitle;
@@ -21,8 +24,9 @@ main {
 
 .text {
   margin: 30px;
+  width: 100%;
 
-  p{
+  p {
     color: $text;
     font-size: $font-size-text;
   }
@@ -31,7 +35,9 @@ main {
 .image-container {
   display: flex;
   flex-direction: column;
-
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 
   img {
     width: 350px;
@@ -45,28 +51,40 @@ main {
   p {
     font-size: $font-size-text;
   }
-
 }
 
 .content-container {
   display: flex;
   flex-direction: row;
   padding: 3rem;
+  width: 100%;
+  align-items: flex-start;
+}
 
+.image-wrapper {
+  flex-shrink: 0;
+  width: 350px;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .text-container {
   padding: 1rem;
+  text-align: center;
+  flex-grow: 1;
+}
 
-  h1 {
-    color: $primary;
-  }
+.text-container h1 {
+  color: $primary;
+}
 
-  p{
-    color: $text;
-    font-size: $font-size-text;
-  }
-
+.text-container p {
+  color: $text;
+  font-size: $font-size-text;
 }
 
 .btn-container {
@@ -74,26 +92,30 @@ main {
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  width: 100%;
+}
 
-  .btn {
-    @include default-button;
-  }
+.btn-container .btn {
+  @include default-button;
 }
 
 @media screen and (min-width: $mobile) and (max-width: $desktop) {
-
   main {
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    align-items: center;
+    max-width: 90%;
   }
 
   .content-container {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
 
+  .image-wrapper {
+    width: 100%;
+    max-width: 350px;
   }
 }
-
-
-
-
