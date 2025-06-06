@@ -12,23 +12,25 @@ $desktop: 1024px;
 $widescreen: 1216px;
 $fullhd: 1408px;
 
+$base-unit: 1rem;
+
 // Text
 $main-font: 'Poppins', sans-serif;
-$font-size-base: 1rem;
-$font-size-big: 1.5rem;
-$font-size-title: 3rem;
-$font-size-big: 5rem;
-$font-size-title-small: 1.5rem;
-$font-size-subtitle: 1.5rem;
-$font-size-text: 1.3rem;
-$font-size-text-small: 0.8rem;
+$font-size-base: $base-unit;
+$font-size-text-small: $base-unit * 0.875;
+$font-size-text: $base-unit * 1.125;
+$font-size-subtitle: $base-unit * 1.5;
+$font-size-big: $base-unit * 2;
+$font-size-title-small: $base-unit * 2.5;
+$font-size-title: $base-unit * 3;
+
+$spacing-unit: $base-unit * 0.75;
 
 // Spacing | margin | padding
-$margin: 20px;
-$padding: 20px;
-$gap: 15px;
+$margin: $spacing-unit * 2;
+$padding: $spacing-unit * 2;
+$gap: $spacing-unit;
 
 //Border - box shadow
 $border-radius: 5px;
-$box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-
+$box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
