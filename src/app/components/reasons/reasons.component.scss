@@ -156,9 +156,41 @@ main {
 
 @media screen and (min-width: $mobile) and (max-width: $desktop) {
   .list-container {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 4fr));
     justify-content: center;
     align-content: center;
     text-align: center;
   }
+
+  .header-section h2 {
+    font-size: 2em;
+  }
+
+  .header-section h3 {
+    font-size: 1.5em;
+  }
+
+  .numbers-section {
+    flex-direction: column;
+    padding: 40px 15px;
+  }
+
+  .number-item {
+    margin-bottom: 30px;
+    padding: 0;
+  }
+
+  .number-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .animated-number {
+    font-size: 2.8em;
+  }
+
+  .number-item p {
+    font-size: 1.1em;
+  }
 }
+
+
