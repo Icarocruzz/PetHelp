@@ -7,6 +7,7 @@ import { NavbarComponent } from './share/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { QualidadeComponent } from './components/qualidade/qualidade.component';
 import { ServiceComponent } from './components/service/service.component';
+import { ReasonsComponent } from './components/reasons/reasons.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { ServiceComponent } from './components/service/service.component';
     HomeComponent,
     QualidadeComponent,
     ServiceComponent,
+    ReasonsComponent,
   ],
   imports: [
     BrowserModule,
