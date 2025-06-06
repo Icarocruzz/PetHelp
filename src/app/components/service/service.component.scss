@@ -32,8 +32,18 @@ main {
   display: flex;
   flex-direction: column;
 
+
   img {
-    width: 400px;
+    width: 350px;
+  }
+
+  h1 {
+    font-size: $font-size-subtitle;
+    color: $text;
+  }
+
+  p {
+    font-size: $font-size-text;
   }
 
 }
@@ -41,7 +51,7 @@ main {
 .content-container {
   display: flex;
   flex-direction: row;
-  padding: 1rem;
+  padding: 3rem;
 
 }
 
