@@ -16,16 +16,16 @@ main {
 
 .title h1 {
   color: $primary;
-  font-size: $font-size-title;
+  font-size: $font-size-subtitle;
 }
 
 .text p {
   color:$text;
-  font-size: $font-size-subtitle;
+  font-size: $font-size-text;
 }
 
 .list li {
-  font-size: $font-size-subtitle;
+  font-size: $font-size-text;
   color: $text;
 }
 
