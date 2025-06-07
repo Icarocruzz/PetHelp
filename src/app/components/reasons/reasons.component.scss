@@ -107,29 +107,31 @@ main {
   }
 }
 
+.numbers {
+  background-color: $white;
+}
+
 .header-section {
   text-align: center;
   padding: 50px 20px;
-  background-color: #f8f8f8;
   color: #333;
 }
 
 .header-section h2 {
   font-size: 2.5em;
-  color: #004085;
+  color: $primary;
   margin-bottom: 10px;
 }
 
 .header-section h3 {
   font-size: 1.8em;
-  color: #004085;
+  color: $primary;
 }
 
 .numbers-section {
   display: flex;
   justify-content: space-around;
   padding: 80px 20px;
-  background-color: #fff;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
 }
@@ -143,14 +145,14 @@ main {
 .animated-number {
   font-size: 3.5em;
   font-weight: bold;
-  color: #004085;
+  color: $primary;
   display: inline-block;
   transition: all 0.5s ease-out;
 }
 
 .number-item p {
   font-size: 1.2em;
-  color: #666;
+  color: $text;
   margin-top: 10px;
 }
 
